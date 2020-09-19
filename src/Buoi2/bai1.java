@@ -96,4 +96,9 @@ static int xacnhan=0;
     {
         menu();
     }  
+<<<<<<< HEAD
+=======
+}
+
+>>>>>>> edcc253ae711d7e037d02bacb027b4bcf0b74949
 }
