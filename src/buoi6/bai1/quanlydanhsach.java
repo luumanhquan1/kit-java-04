@@ -14,6 +14,7 @@ ArrayList<nguoilon> nguoilonlist;
         Scanner sc=new Scanner(System.in);
         nguoilon tmp=new nguoilon();
         String chon= "";
+        
         int i=0;
         while(true){
             if(chon.equalsIgnoreCase("k")){
@@ -30,6 +31,7 @@ public void xuatnguoilon(){
     int i=1;
     for(nguoilon tmp : nguoilonlist){
         i++;
+        
         System.out.printf("%d. ",i);
         tmp.xuat();
     }

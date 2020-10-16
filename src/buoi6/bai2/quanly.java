@@ -1,19 +1,12 @@
 
 package buoi6.bai2;
-
 import java.util.ArrayList;
 import java.util.Scanner;
-public class quanly {
+public class quanly extends thongtin {
   Scanner sc=new Scanner(System.in);
-  ArrayList<suaongnuoc> ongnuoclist;
-   ArrayList<nhapviengiaohang> giaohanglist;
-    ArrayList<nhanvienxeom> xeomlist;
-    
+ArrayList<thongtin> danhsachsinhvien;
     public quanly() {
-        ongnuoclist=new ArrayList<>();
-         giaohanglist =new ArrayList<>();
-            xeomlist=new ArrayList<>();
-           
+           danhsachsinhvien=new ArrayList<>();
     }
     public void nhapnvon(){
         int i=1;
@@ -24,7 +17,7 @@ public class quanly {
                 break;
             }
             tmp.nhap();
-            ongnuoclist.add(tmp);
+            danhsachsinhvien.add(tmp);
             System.out.println("ban co muon nhap nuoc kh:");
             chon=sc.nextLine();
         }
@@ -38,7 +31,7 @@ public class quanly {
                 break;
             }
             tmp.nhap();
-            giaohanglist.add(tmp);
+            danhsachsinhvien.add(tmp);
             System.out.println("ban co muon nhap nuoc kh:");
             chon=sc.nextLine();
         }
@@ -52,34 +45,44 @@ public class quanly {
                 break;
             }
             tmp.nhap();
-            xeomlist.add(tmp);
+            danhsachsinhvien.add(tmp);
             System.out.println("ban co muon nhap nuoc kh:");
             chon=sc.nextLine();
         }
     }
     public void xuatnvon(){
         int i=0;
-        for(suaongnuoc tmp : ongnuoclist){
+        for(thongtin tmp : danhsachsinhvien){
+            if(danhsachsinhvien.get(i) instanceof suaongnuoc ){
             i++;
             System.out.printf("%d .",i);
-            tmp.xuat();
+            tmp.xuat();}
         }
     }
     public void xuatnvgh(){
         int i=0;
-        for(nhapviengiaohang tmp : giaohanglist){
+        for(thongtin tmp : danhsachsinhvien){
+            if(danhsachsinhvien.get(i) instanceof nhapviengiaohang){
             i++;
             System.out.printf("%d .",i);
-            tmp.xuat();
+            tmp.xuat();}
       }
     }
      public void xuatnvxo(){
         int i=0;
-        for(nhanvienxeom tmp : xeomlist){
+        for(thongtin tmp : danhsachsinhvien){
+            if(danhsachsinhvien.get(i) instanceof nhanvienxeom){
             i++;
             System.out.printf("%d .",i);
-            tmp.xuat();
+            tmp.xuat();}
         }
     }
+     public void xuatnv(){
+         int i=0;
+         for(thongtin tmp : danhsachsinhvien){
+             i++;
+             tmp.xuat();
+         }
+     }
 
 }
