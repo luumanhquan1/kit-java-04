@@ -113,7 +113,6 @@ Scanner sc=new Scanner(System.in);
       public void xuatnv(){
           int i=0;
           for(thongtin tmp:danhsachsinhvien){
-              
              danhsachsinhvien.get(i).xuat();
              i++;
           }
