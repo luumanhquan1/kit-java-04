@@ -43,7 +43,7 @@ public class quanky {
           
         Dientichtamgiacmax();
  int i=0;
-           do{S
+           do{
                TamGiacList.get(0).xuatcanh();
          i++;      
            }while(i<1);
