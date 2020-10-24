@@ -27,7 +27,7 @@ public class tamgiac extends dagiac {
     public void xuat(){
         System.out.println("dien tich tam giac:"+DienTich());
         System.out.println("chu vi tam giac:"+ChuVi());
-        super.xuat();
+        super.xuatcanh();
     }
 
     public tamgiac() {

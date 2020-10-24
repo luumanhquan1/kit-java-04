@@ -23,7 +23,10 @@ public int ChuVi(){
 public float DienTich(){
     return 0;
 }
-  public void xuat(){
+public void xuat(){
+    
+}
+  public void xuatcanh(){
       for(int i=0;i<3;i++){
           System.out.println("canh cua tam giac:  "+a[i]);
       }

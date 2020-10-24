@@ -39,11 +39,20 @@ public class quanky {
         }
     }
     public void xuatcanhDienTichlon(){
-        Dientichtamgiacmax();
-        for(dagiac tmp:TamGiacList){
-            TamGiacList.get(0).xuat();
-            
-        }
         
+          
+        Dientichtamgiacmax();
+ int i=0;
+           do{S
+               TamGiacList.get(0).xuatcanh();
+         i++;      
+           }while(i<1);
+        
+    }
+    public void menu(){
+        System.out.println("1.nhap tam giac:");
+        System.out.println("2.xuat canh,chu vi,dien tich");
+        System.out.println("3.xuat canh cua tam giac co dien tichs lon nhat");
+        System.out.println("4.thoat");
     }
 }
