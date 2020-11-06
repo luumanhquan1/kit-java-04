@@ -23,6 +23,11 @@ public int getPopulation() {
     public void setPopulation(int population) {
         this.population = population;
     }
+
+    @Override
+    public void giveBirth() {
+        System.out.println("động vật Cat mới sinh tên là:"+ super.getName()+"'s baby");
+    }
    
 
    

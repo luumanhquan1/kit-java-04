@@ -55,6 +55,28 @@ public void catheloaicho(){
        i++;
     }
 }
+public void catheloaimeo(){
+    int i=0;
+    for(Animal tmp:DongVatList){
+       if(DongVatList.get(i) instanceof Cat){
+           tmp.Introduce();
+           System.out.println("số cá thể loài mèo là:"+tmp.getPopulation());
+           
+       }
+       i++;
+    }
+}
+public void catheloaibo(){
+    int i=0;
+    for(Animal tmp:DongVatList){
+       if(DongVatList.get(i) instanceof Dog){
+           tmp.Introduce();
+           System.out.println("số cá thể loài bò là:"+tmp.getPopulation());
+           
+       }
+       i++;
+    }
+}
     public quanly() {
     }
 

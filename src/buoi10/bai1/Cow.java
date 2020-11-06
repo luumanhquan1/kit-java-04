@@ -28,6 +28,11 @@ private static int population=0;
     public void setPopulation(int population) {
         this.population = population;
     }
+
+    @Override
+    public void giveBirth() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

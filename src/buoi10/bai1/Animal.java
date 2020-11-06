@@ -34,7 +34,6 @@ public void Introduce(){
         this.name = name;
     }
    public abstract void makeASound();
-    public void population(){
-        System.out.println("tổng số con vật thuộc loài khác nhau là:"+population);
-    }
+
+    public abstract void giveBirth();
 }
